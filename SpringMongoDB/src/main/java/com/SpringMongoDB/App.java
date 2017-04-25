@@ -18,7 +18,8 @@ public class App implements CommandLineRunner {
 	}
 	
 	public void run(String... args) throws Exception {
-
+		System.out.println( "hi");
+	
 		repository.deleteAll();
 
 		// save a couple of customers
@@ -31,6 +32,7 @@ public class App implements CommandLineRunner {
 		for (Customer customer : repository.findAll()) {
 			System.out.println(customer);
 		}
+		
 		System.out.println();
 
 		// fetch an individual customer
